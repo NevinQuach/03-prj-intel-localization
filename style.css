@@ -41,6 +41,8 @@
 /* Timeline Background */
 .timelinebackground{
   background-color:#0773c4;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 /* Timeline Section */
@@ -122,9 +124,9 @@
   transition: transform 0.5s;
 }
 
-/* Bottom Section */
-.bottom {
-  background-color:#055693;
+/* Timeline Instructions */
+.timelineinstrctions {
+  background-color:#0773c4;
   color: white;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -132,6 +134,66 @@
   text-align: center;
   font-size: 15px;  
   letter-spacing: 1px;
+}
+
+/* Form Section */
+.form {
+  background-color:#055693;
+  text-align: center;
+  color: white;
+  padding-bottom: 25px;
+}
+
+.form h1 {
+  color: white;
+  font-family: "Public Sans", sans-serif;
+  font-size: 50px;
+  letter-spacing: 1px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.form input {
+  background-color: #0773c4;
+  padding: 10px;
+  border: none;
+  color: white;
+  box-shadow: 0px 2.5px 2.5px black;
+  width: 500px;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 0.5s;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form input:focus, .form input:hover{
+    outline: none;
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+.form button{
+  background-color: #0773c4;
+  border: none;
+  padding: 10px;
+  color: white;
+  box-shadow: 0px 2.5px 2.5px black;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 0.5s;
+}
+
+.form button:hover, .form button:focus{ 
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
 
 @media (max-width: 900px) {
@@ -152,6 +214,10 @@
     font-size: 14px;
   }
 
+  .timelinebackground{
+  padding-left: 25px;
+  padding-right: 25px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -163,14 +229,6 @@
     font-size: 14px;
   }
 
-  .timeline {
-    gap: 16px;
-    padding: 16px;
-    flex-direction: column;
-    overflow-x: visible;
-    align-items: center;
-  }
-
   .card {
     width: 100%;
     max-width: 320px;
@@ -178,9 +236,26 @@
     padding: 18px;
   }
 
+  .card h3 {
+    font-size: 14px;
+  }
+
+  .timelinebackground{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .card img {
     height: 62%;
     object-fit: contain;
     background-color: #016b97;
+  }
+
+  .timeline {
+    gap: 16px;
+    padding: 16px;
+    flex-direction: column;
+    overflow-x: visible;
+    align-items: center;
   }
 }
