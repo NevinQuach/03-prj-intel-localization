@@ -5,7 +5,7 @@
 }
 
 /* Header Section */
-.header {
+.siteheader {
   display: flex;
   flex-direction: column;
   background-color: #055693;
@@ -14,7 +14,7 @@
   padding: 0 20px;
 }
 
-.header h1 {
+.siteheader h1 {
   color: white;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -23,7 +23,7 @@
   letter-spacing: 1px;
 }
 
-.header p{
+.siteheader p{
   color: white;
   padding-bottom: 25px;
   font-family: Arial, Helvetica, sans-serif;
@@ -33,7 +33,7 @@
   letter-spacing: 1px;
 }
 
-.header img{
+.siteheader img{
   width: 100px;
   padding-top: 25px;
 }
@@ -46,7 +46,7 @@
 }
 
 /* Timeline Section */
-.timeline {
+.timelinelayout {
   display: flex;
   gap: 25px;
   padding: 25px;
@@ -125,7 +125,7 @@
 }
 
 /* Timeline Instructions */
-.timelineinstrctions {
+.timelinelayoutinstrctions {
   background-color:#0773c4;
   color: white;
   padding-top: 25px;
@@ -134,6 +134,75 @@
   text-align: center;
   font-size: 15px;  
   letter-spacing: 1px;
+}
+
+/* Box Section */
+.box-background .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-background .justify-content-center {
+  justify-content: center;
+}
+
+.box-background .col-12 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .box-background .col-md-4 {
+    width: 33.333%;
+  }
+}
+
+.my-box {
+    padding:20px;
+    background-color:#016b97;
+    margin: 15px;
+    max-width: 400px;
+    max-height: 500px;
+    text-align: center;
+    transition: transform 0.5s;
+    box-shadow: 0px 5px 5px black;
+}
+
+.my-box:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+.my-box h2 {
+    color: white;
+    font-family: "Public Sans", sans-serif;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.my-box p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 20px
+
+}
+
+a[href="#"] {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.my-box img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.box-background {
+    background-color:#0773c4;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 /* Form Section */
