@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+/* RTL support: switch text flow when the page language is RTL */
+html:lang(ar),
+html:lang(he),
+html:lang(fa),
+html:lang(ur) {
+  direction: rtl;
+}
+
+html:lang(ar) body,
+html:lang(he) body,
+html:lang(fa) body,
+html:lang(ur) body {
+  text-align: right;
+}
+
 /* Header Section */
 .siteheader {
   display: flex;
