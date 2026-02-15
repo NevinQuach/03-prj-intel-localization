@@ -224,6 +224,8 @@ a[href="#"] {
   letter-spacing: 1px;
   padding-top: 25px;
   padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form input {
@@ -232,7 +234,7 @@ a[href="#"] {
   border: none;
   color: white;
   box-shadow: 0px 2.5px 2.5px black;
-  width: 500px;
+  width: 600px;
   margin-right: 10px;
   letter-spacing: 1px;
   font-family: Arial, Helvetica, sans-serif;
@@ -299,6 +301,10 @@ a[href="#"] {
   padding-left: 25px;
   padding-right: 25px;
   }
+
+  .form input {
+    width: 400px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -341,11 +347,6 @@ a[href="#"] {
   }
 
   .form input {
-    width: 250px;
-    margin-right: 5px;
-  }
-
-  .form button{
-
+    width: 200px;
   }
 }
