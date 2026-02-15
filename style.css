@@ -216,7 +216,7 @@ a[href="#"] {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a[href="#"]:hover {
+a[href="#"]:hover, a[href="#"]:focus {
     color: black
 }
 
