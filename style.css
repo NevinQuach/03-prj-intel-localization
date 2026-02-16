@@ -217,7 +217,7 @@ a[href="#"] {
 }
 
 a[href="#"]:hover, a[href="#"]:focus {
-    color: black
+    color: black;
 }
 
 .my-box img {
